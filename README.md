@@ -15,7 +15,7 @@ https://stats.stackexchange.com/questions/390200/what-is-the-baseline-of-the-f1-
 
 Here logistic Regression, support vector machine and random forest models are chosen as trined models. 
 
-### Over-sampling methods in imbalanced classification
+### Re-sampling methods in imbalanced classification
 To deal with the imbalance classification problem, re-sampling methods with "imbalanced-learn" package is applied.
 There are over-sampling and and under-sampling methods. In over-sampling methods, more data is generated in the minority class, whereas in under-sampling methods, some datas is generated in belong to majority class are removed. In principle, more data can provide more information, so over-sampling methods sound better. However, in the sentiment analysis problem, the dimensionality of the feature space is very large and the data belong to minority class might be very sparse. The process of over-sampling mostly relies on the concept of nearest neighbors and might create synthesis datas which are more close to the majority class. Therefore, the under-sampling methods are chosen in this project.
 
